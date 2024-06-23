@@ -1,22 +1,57 @@
 #background{
     font-family: lato;
-    background: linear-gradient(140deg, #009f7b, #5a0ddf, #009f7b);
+    background: linear-gradient(140deg, #ff76da, #0d29df, #ff76da);
     height: 100vh;
     background-size: 200% 200%;
-    animation: liquidBackground 5s ease infinite ;
+    animation: liquidBackground 6s ease infinite ;
     overflow: hidden;
 }
 #all{
     max-width: 600px;
     margin: auto;
-    margin-top: 4rem;
+    /* border: #009f7b solid 2px; */
+    height: 82dvh;
+    margin-top: 3.5rem;
 
+}
+
+#profile-picture{
+    width: 100px;
+    height: 100px;
+}
+
+#circle{
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(255,255,255,.9);
 }
     
 .container{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: .5px;
 }
+h1{
+    margin-bottom: 0;
+}
+#occupation{
+    margin: 0;
+    height: fit-content;
+}
+.container:nth-child(2){
+    flex-direction: column;
+}
+.container:nth-child(2){
+    font-weight: 400;
+}
+
 @keyframes liquidBackground {
     0%{background-position: 0 0%; }
     50%{background-position: 100% 100%;}
@@ -35,7 +70,7 @@
 
 .social-network-logos {
     width: 22px;
-    display: block;
+    /* display: block; */
 
 }
 .social-network-logos path{
@@ -55,17 +90,17 @@
 .contacs-container:nth-child(3){
     animation-delay: 0.12s;
 }
-.contacs-container:nth-child(4){
-    
+.contacs-container:nth-child(4){ 
     animation-delay: 0.16s;
 }
-.contacs-container:nth-child(5){
-    
+.contacs-container:nth-child(5){  
     animation-delay: 0.2s;
 }
 .contacs-container:nth-child(6){
-    
     animation-delay: 0.24s;
+}
+.contacs-container:nth-child(7){
+    animation-delay: 0.28s;
 }
 
 #description{
@@ -82,9 +117,6 @@ a[class='contacs-container']:not(:nth-child(1)), div:not(:nth-child(1)) {
 }
 a{
     text-decoration: none;
-}
-.contacs-container:nth-child(3){
-    margin-top: 5rem;
 }
 
 #services-bottom{
@@ -124,10 +156,10 @@ a{
     align-items: center;
     flex-direction: column;
     color: blanchedalmond;
-    height: 30vh;
+    /* height: 30vh; */
 
 }
-footer svg{
+.footer-picsa-logo{
     width: 100px;
     margin-bottom: 20px;
 }
