@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #background{
     font-family: lato;
     background: linear-gradient(140deg, #ff76da, #0d29df, #ff76da);
@@ -8,10 +12,12 @@
 }
 #all{
     max-width: 600px;
+    position: relative;
+    top: 3rem;
     margin: auto;
     /* border: #009f7b solid 2px; */
     height: 82dvh;
-    margin-top: 3.5rem;
+    margin-top: 0rem;
 
 }
 
@@ -152,14 +158,17 @@ a{
   }
   footer{
     display: flex;
-    justify-content: flex-end;
+    /* background-color: blue; */
+    position: absolute;
+    width: 100%;
+    bottom: 1rem;
+    height: fit-content;
     align-items: center;
     flex-direction: column;
     color: blanchedalmond;
-    /* height: 30vh; */
 
 }
 .footer-picsa-logo{
     width: 100px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
